@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A02E811191C6219009F4024 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02E810191C6219009F4024 /* Foundation.framework */; };
+		0A02E813191C6219009F4024 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02E812191C6219009F4024 /* CoreGraphics.framework */; };
+		0A02E815191C6219009F4024 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02E814191C6219009F4024 /* UIKit.framework */; };
+		0A02E81B191C6219009F4024 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A02E819191C6219009F4024 /* InfoPlist.strings */; };
+		0A02E81D191C6219009F4024 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02E81C191C6219009F4024 /* main.m */; };
+		0A02E821191C6219009F4024 /* JKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02E820191C6219009F4024 /* JKAppDelegate.m */; };
+		0A02E824191C6219009F4024 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A02E822191C6219009F4024 /* Main_iPhone.storyboard */; };
+		0A02E827191C6219009F4024 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A02E825191C6219009F4024 /* Main_iPad.storyboard */; };
+		0A02E82A191C6219009F4024 /* JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02E829191C6219009F4024 /* JKViewController.m */; };
+		0A02E82C191C6219009F4024 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A02E82B191C6219009F4024 /* Images.xcassets */; };
+		0A02E833191C6219009F4024 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02E832191C6219009F4024 /* XCTest.framework */; };
+		0A02E834191C6219009F4024 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02E810191C6219009F4024 /* Foundation.framework */; };
+		0A02E835191C6219009F4024 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02E814191C6219009F4024 /* UIKit.framework */; };
+		0A02E83D191C6219009F4024 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A02E83B191C6219009F4024 /* InfoPlist.strings */; };
+		0A02E83F191C6219009F4024 /* Bool_BreakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02E83E191C6219009F4024 /* Bool_BreakerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A02E836191C6219009F4024 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A02E805191C6219009F4024 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A02E80C191C6219009F4024;
+			remoteInfo = "Bool Breaker";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A02E80D191C6219009F4024 /* Bool Breaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bool Breaker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A02E810191C6219009F4024 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A02E812191C6219009F4024 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0A02E814191C6219009F4024 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0A02E818191C6219009F4024 /* Bool Breaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bool Breaker-Info.plist"; sourceTree = "<group>"; };
+		0A02E81A191C6219009F4024 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A02E81C191C6219009F4024 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A02E81E191C6219009F4024 /* Bool Breaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bool Breaker-Prefix.pch"; sourceTree = "<group>"; };
+		0A02E81F191C6219009F4024 /* JKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKAppDelegate.h; sourceTree = "<group>"; };
+		0A02E820191C6219009F4024 /* JKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKAppDelegate.m; sourceTree = "<group>"; };
+		0A02E823191C6219009F4024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		0A02E826191C6219009F4024 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		0A02E828191C6219009F4024 /* JKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKViewController.h; sourceTree = "<group>"; };
+		0A02E829191C6219009F4024 /* JKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKViewController.m; sourceTree = "<group>"; };
+		0A02E82B191C6219009F4024 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0A02E831191C6219009F4024 /* Bool BreakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bool BreakerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A02E832191C6219009F4024 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		0A02E83A191C6219009F4024 /* Bool BreakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bool BreakerTests-Info.plist"; sourceTree = "<group>"; };
+		0A02E83C191C6219009F4024 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A02E83E191C6219009F4024 /* Bool_BreakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bool_BreakerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A02E80A191C6219009F4024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A02E813191C6219009F4024 /* CoreGraphics.framework in Frameworks */,
+				0A02E815191C6219009F4024 /* UIKit.framework in Frameworks */,
+				0A02E811191C6219009F4024 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A02E82E191C6219009F4024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A02E833191C6219009F4024 /* XCTest.framework in Frameworks */,
+				0A02E835191C6219009F4024 /* UIKit.framework in Frameworks */,
+				0A02E834191C6219009F4024 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A02E804191C6219009F4024 = {
+			isa = PBXGroup;
+			children = (
+				0A02E816191C6219009F4024 /* Bool Breaker */,
+				0A02E838191C6219009F4024 /* Bool BreakerTests */,
+				0A02E80F191C6219009F4024 /* Frameworks */,
+				0A02E80E191C6219009F4024 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A02E80E191C6219009F4024 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A02E80D191C6219009F4024 /* Bool Breaker.app */,
+				0A02E831191C6219009F4024 /* Bool BreakerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A02E80F191C6219009F4024 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A02E810191C6219009F4024 /* Foundation.framework */,
+				0A02E812191C6219009F4024 /* CoreGraphics.framework */,
+				0A02E814191C6219009F4024 /* UIKit.framework */,
+				0A02E832191C6219009F4024 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A02E816191C6219009F4024 /* Bool Breaker */ = {
+			isa = PBXGroup;
+			children = (
+				0A02E81F191C6219009F4024 /* JKAppDelegate.h */,
+				0A02E820191C6219009F4024 /* JKAppDelegate.m */,
+				0A02E822191C6219009F4024 /* Main_iPhone.storyboard */,
+				0A02E825191C6219009F4024 /* Main_iPad.storyboard */,
+				0A02E828191C6219009F4024 /* JKViewController.h */,
+				0A02E829191C6219009F4024 /* JKViewController.m */,
+				0A02E82B191C6219009F4024 /* Images.xcassets */,
+				0A02E817191C6219009F4024 /* Supporting Files */,
+			);
+			path = "Bool Breaker";
+			sourceTree = "<group>";
+		};
+		0A02E817191C6219009F4024 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A02E818191C6219009F4024 /* Bool Breaker-Info.plist */,
+				0A02E819191C6219009F4024 /* InfoPlist.strings */,
+				0A02E81C191C6219009F4024 /* main.m */,
+				0A02E81E191C6219009F4024 /* Bool Breaker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A02E838191C6219009F4024 /* Bool BreakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A02E83E191C6219009F4024 /* Bool_BreakerTests.m */,
+				0A02E839191C6219009F4024 /* Supporting Files */,
+			);
+			path = "Bool BreakerTests";
+			sourceTree = "<group>";
+		};
+		0A02E839191C6219009F4024 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A02E83A191C6219009F4024 /* Bool BreakerTests-Info.plist */,
+				0A02E83B191C6219009F4024 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A02E80C191C6219009F4024 /* Bool Breaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A02E842191C6219009F4024 /* Build configuration list for PBXNativeTarget "Bool Breaker" */;
+			buildPhases = (
+				0A02E809191C6219009F4024 /* Sources */,
+				0A02E80A191C6219009F4024 /* Frameworks */,
+				0A02E80B191C6219009F4024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bool Breaker";
+			productName = "Bool Breaker";
+			productReference = 0A02E80D191C6219009F4024 /* Bool Breaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A02E830191C6219009F4024 /* Bool BreakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A02E845191C6219009F4024 /* Build configuration list for PBXNativeTarget "Bool BreakerTests" */;
+			buildPhases = (
+				0A02E82D191C6219009F4024 /* Sources */,
+				0A02E82E191C6219009F4024 /* Frameworks */,
+				0A02E82F191C6219009F4024 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A02E837191C6219009F4024 /* PBXTargetDependency */,
+			);
+			name = "Bool BreakerTests";
+			productName = "Bool BreakerTests";
+			productReference = 0A02E831191C6219009F4024 /* Bool BreakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A02E805191C6219009F4024 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JK;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "John M. P. Knox";
+				TargetAttributes = {
+					0A02E830191C6219009F4024 = {
+						TestTargetID = 0A02E80C191C6219009F4024;
+					};
+				};
+			};
+			buildConfigurationList = 0A02E808191C6219009F4024 /* Build configuration list for PBXProject "Bool Breaker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A02E804191C6219009F4024;
+			productRefGroup = 0A02E80E191C6219009F4024 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A02E80C191C6219009F4024 /* Bool Breaker */,
+				0A02E830191C6219009F4024 /* Bool BreakerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A02E80B191C6219009F4024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A02E827191C6219009F4024 /* Main_iPad.storyboard in Resources */,
+				0A02E82C191C6219009F4024 /* Images.xcassets in Resources */,
+				0A02E824191C6219009F4024 /* Main_iPhone.storyboard in Resources */,
+				0A02E81B191C6219009F4024 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A02E82F191C6219009F4024 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A02E83D191C6219009F4024 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A02E809191C6219009F4024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A02E81D191C6219009F4024 /* main.m in Sources */,
+				0A02E82A191C6219009F4024 /* JKViewController.m in Sources */,
+				0A02E821191C6219009F4024 /* JKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A02E82D191C6219009F4024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A02E83F191C6219009F4024 /* Bool_BreakerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A02E837191C6219009F4024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A02E80C191C6219009F4024 /* Bool Breaker */;
+			targetProxy = 0A02E836191C6219009F4024 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A02E819191C6219009F4024 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A02E81A191C6219009F4024 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A02E822191C6219009F4024 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A02E823191C6219009F4024 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0A02E825191C6219009F4024 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A02E826191C6219009F4024 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		0A02E83B191C6219009F4024 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A02E83C191C6219009F4024 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A02E840191C6219009F4024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A02E841191C6219009F4024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A02E843191C6219009F4024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bool Breaker/Bool Breaker-Prefix.pch";
+				INFOPLIST_FILE = "Bool Breaker/Bool Breaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A02E844191C6219009F4024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bool Breaker/Bool Breaker-Prefix.pch";
+				INFOPLIST_FILE = "Bool Breaker/Bool Breaker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0A02E846191C6219009F4024 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bool Breaker.app/Bool Breaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bool Breaker/Bool Breaker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Bool BreakerTests/Bool BreakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		0A02E847191C6219009F4024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Bool Breaker.app/Bool Breaker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Bool Breaker/Bool Breaker-Prefix.pch";
+				INFOPLIST_FILE = "Bool BreakerTests/Bool BreakerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A02E808191C6219009F4024 /* Build configuration list for PBXProject "Bool Breaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A02E840191C6219009F4024 /* Debug */,
+				0A02E841191C6219009F4024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A02E842191C6219009F4024 /* Build configuration list for PBXNativeTarget "Bool Breaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A02E843191C6219009F4024 /* Debug */,
+				0A02E844191C6219009F4024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0A02E845191C6219009F4024 /* Build configuration list for PBXNativeTarget "Bool BreakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A02E846191C6219009F4024 /* Debug */,
+				0A02E847191C6219009F4024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A02E805191C6219009F4024 /* Project object */;
+}
