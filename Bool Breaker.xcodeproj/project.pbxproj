@@ -22,6 +22,7 @@
 		0A02E835191C6219009F4024 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A02E814191C6219009F4024 /* UIKit.framework */; };
 		0A02E83D191C6219009F4024 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A02E83B191C6219009F4024 /* InfoPlist.strings */; };
 		0A02E83F191C6219009F4024 /* Bool_BreakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02E83E191C6219009F4024 /* Bool_BreakerTests.m */; };
+		0A02E84A191C62E6009F4024 /* JKTruthFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A02E849191C62E6009F4024 /* JKTruthFinder.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		0A02E83A191C6219009F4024 /* Bool BreakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Bool BreakerTests-Info.plist"; sourceTree = "<group>"; };
 		0A02E83C191C6219009F4024 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0A02E83E191C6219009F4024 /* Bool_BreakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bool_BreakerTests.m; sourceTree = "<group>"; };
+		0A02E848191C62E6009F4024 /* JKTruthFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKTruthFinder.h; sourceTree = "<group>"; };
+		0A02E849191C62E6009F4024 /* JKTruthFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTruthFinder.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				0A02E825191C6219009F4024 /* Main_iPad.storyboard */,
 				0A02E828191C6219009F4024 /* JKViewController.h */,
 				0A02E829191C6219009F4024 /* JKViewController.m */,
+				0A02E848191C62E6009F4024 /* JKTruthFinder.h */,
+				0A02E849191C62E6009F4024 /* JKTruthFinder.m */,
 				0A02E82B191C6219009F4024 /* Images.xcassets */,
 				0A02E817191C6219009F4024 /* Supporting Files */,
 			);
@@ -256,6 +261,7 @@
 			files = (
 				0A02E81D191C6219009F4024 /* main.m in Sources */,
 				0A02E82A191C6219009F4024 /* JKViewController.m in Sources */,
+				0A02E84A191C62E6009F4024 /* JKTruthFinder.m in Sources */,
 				0A02E821191C6219009F4024 /* JKAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

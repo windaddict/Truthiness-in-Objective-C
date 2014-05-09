@@ -7,6 +7,7 @@
 //
 
 #import "JKViewController.h"
+#import "JKTruthFinder.h"
 
 @interface JKViewController ()
 
@@ -18,6 +19,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    JKTruthFinder *truthFinder = [[JKTruthFinder alloc] init];
+    [truthFinder runTests];
 }
 
 - (void)didReceiveMemoryWarning
