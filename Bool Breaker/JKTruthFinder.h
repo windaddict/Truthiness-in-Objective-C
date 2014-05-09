@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+static NSString *const kIsTrueKey = @"isTrue";
+static NSString *const kIsYesKey = @"isYes";
+static NSString *const kTruthFailKey = @"truthFail";
+static NSString *const kDescriptionKey = @"description";
+
 @interface JKTruthFinder : NSObject
--(void) runTests;
+@property NSMutableArray* results;
+-(NSMutableArray*) runTests;
 @end

@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JKViewController : UIViewController
+static NSString *const kResultsCellReuseIdentifier = @"results";
+
+@interface JKViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end

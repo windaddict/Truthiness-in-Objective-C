@@ -10,91 +10,90 @@
 
 @implementation JKTruthFinder
 
--(void) runTests{
-    [self logTest:NO description:@"NO"];
+-(NSMutableArray*) runTests{
+    self.results = [NSMutableArray new];
     
-    [self logTest:YES description:@"YES"];
+    [self runTest:NO description:@"NO"];
     
-    [self logTest:0x00 description:@"0x00"];
+    [self runTest:YES description:@"YES"];
+    
+    [self runTest:0x00 description:@"0x00"];
 
-    [self logTest:0x01 description:@"0x01"];
+    [self runTest:0x01 description:@"0x01"];
 
-    [self logTest:0x02 description:@"0x02"];
+    [self runTest:0x02 description:@"0x02"];
     
-    [self logTest:0x80 description:@"0x80"];
+    [self runTest:0x80 description:@"0x80"];
 
-    [self logTest:0x01 | 0x02 description:@"0x01 | 0x02"];
+    [self runTest:0x01 | 0x02 description:@"0x01 | 0x02"];
     
-    [self logTest:0xff & 0x02 description:@"0xff & 0x02"];
+    [self runTest:0xff & 0x02 description:@"0xff & 0x02"];
     
-    [self logTest:0x01 << 1 description:@"0x01 << 1"];
+    [self runTest:0x01 << 1 description:@"0x01 << 1"];
     
-    [self logTest:0x02 description:@"0x02"];
+    [self runTest:0x02 description:@"0x02"];
     
-    [self logTest:3 == 4 description:@"3 == 4"];
+    [self runTest:3 == 4 description:@"3 == 4"];
     
-    [self logTest:-1 description:@"-1"];
+    [self runTest:-1 description:@"-1"];
     
-    [self logTest:1 description:@"1"];
+    [self runTest:1 description:@"1"];
     
-    [self logTest:2 description:@"2"];
+    [self runTest:2 description:@"2"];
     
-    [self logTest:(BOOL)self description:@"(BOOL)self"];
+    [self runTest:(BOOL)self description:@"(BOOL)self"];
     
-    [self logTest:(BOOL)0x8000 description:@"(BOOL)0x8000"];
+    [self runTest:(BOOL)0x8000 description:@"(BOOL)0x8000"];
     
-    [self logTest:(bool)0x8000 description:@"(bool)0x8000"];
+    [self runTest:(bool)0x8000 description:@"(bool)0x8000"];
     
-    [self logTest:(BOOL)(2) description:@"(BOOL)(2)"];
+    [self runTest:(BOOL)(2) description:@"(BOOL)(2)"];
     
-    [self logTest:(bool)(2) description:@"(bool)(2)"];
+    [self runTest:(bool)(2) description:@"(bool)(2)"];
     
-    [self logTest:((bool) 2) == ((bool) 4) description:@"((bool) 2) == ((bool) 4)"];
+    [self runTest:((bool) 2) == ((bool) 4) description:@"((bool) 2) == ((bool) 4)"];
     
-    [self logTest:2 == 3 description:@"2 == 3"];
+    [self runTest:2 == 3 description:@"2 == 3"];
     
-    [self logTest:true == YES description:@"true == yes"];
+    [self runTest:true == YES description:@"true == yes"];
     
-    [self logTest:YES == TRUE description:@"YES == TRUE"];
+    [self runTest:YES == TRUE description:@"YES == TRUE"];
     
-    [self logTest:TRUE == 2 description:@"TRUE == 2"];
+    [self runTest:TRUE == 2 description:@"TRUE == 2"];
     
+    [self runTest:!!0x80 description:@"!!0x80"];
+    
+    [self runTest:!!0x8000 description:@"!!0x8000"];
+    
+    [self runTest:NO != 0x8000 description:@"NO != 0x8000"];
+
+    [self runTest:NO != (BOOL)0x8000 description:@"NO != (BOOL)0x8000"];
+
+    [self runTest:NO != 0x80 description:@"NO != 0x80"];
+
+    return self.results;
 }
 
--(void)logTest:(BOOL) value description:(NSString *) description{
-    NSString *result = [self test:value description:description];
-    NSLog(@"Test %@", result);
+
+-(NSMutableDictionary*) runTest:(BOOL) value description:(NSString *) description{
+    NSMutableDictionary *result = [self tryBOOL:value];
+    result[kDescriptionKey] = description;
+    [self.results addObject:result];
+    return result;
 }
 
--(NSMutableString *)test:(BOOL) value description:(NSString *) description{
-    NSMutableString * testResult = [description mutableCopy];
-    [testResult appendString:@": "];
-    [testResult appendString: [self interrogateBOOL:value]];
-    return testResult;
-}
-
--(NSString*) interrogateBOOL: (BOOL) value{
-    NSMutableString *description = [NSMutableString new];
+-(NSMutableDictionary*)tryBOOL: (BOOL) value{
+    NSMutableDictionary *results = [NSMutableDictionary new];
+    
     BOOL isTrue = [[self class] isTrue: value];
     BOOL isYes = [[self class] isYes: value];
+    BOOL truthFail = (((bool) isTrue) != ((bool) isYes));
     
-    if(isTrue){
-        [description appendString:@"true, "];
-    } else {
-        [description appendString:@"false, "];
-    }
+    results[kIsTrueKey] = @(isTrue);
+    results[kIsYesKey] = @(isYes);
+    results[kTruthFailKey] = @(truthFail);
     
-    if(isYes){
-        [description appendString:@"YES "];
-    } else {
-        [description appendString:@" NOTYES "];
-    }
-    
-    if (((bool) isTrue) != ((bool) isYes) ) {
-        [description appendString:@"-TRUTH-FAIL------- "];
-    }
-    
-    return description;
+    return results;
 }
 
 +(BOOL)isTrue:(BOOL) value{
